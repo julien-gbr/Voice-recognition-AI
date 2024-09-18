@@ -1,4 +1,4 @@
-# Script pour enregistrer des phrases et créer un jeu de données audio
+# Script to create the dataset
 
 import sounddevice as sd
 from scipy.io.wavfile import write
@@ -8,7 +8,7 @@ import numpy as np
 from datetime import datetime
 import re
 import unicodedata
-import threading  # Importer threading pour utiliser Event
+import threading 
 
 def File_reformer(value):
     value = str(value)
